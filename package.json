@@ -1,6 +1,6 @@
 {
-    "name": "better-YOUR_LANG_EXTENSION_HERE-syntax",
-    "displayName": "Better YOUR_LANGUAGE Syntax",
+    "name": "better-objc-syntax",
+    "displayName": "Better Objective-C Syntax",
     "description": "",
     "version": "0.0.1",
     "icon": "icon.png",
@@ -16,17 +16,16 @@
         "vscode": "^1.0.0"
     },
     "author": {
-        "name": "YOUR_NAME"
+        "name": "Jeff Hykin"
     },
-    "publisher": "YOUR_USERNAME",
+    "publisher": "jeff-hykin",
     "contributes": {
         "grammars": [
             {
-                "language": "YOUR_LANG_EXTENSION_HERE",
-                "scopeName": "source.YOUR_LANG_EXTENSION_HERE",
-                "path": "./syntaxes/YOUR_LANG_EXTENSION_HERE.tmLanguage.json",
-                "embeddedLanguages": {
-                }
+                "language": "objc",
+                "scopeName": "source.objc",
+                "path": "./syntaxes/objc.tmLanguage.json",
+                "embeddedLanguages": {}
             }
         ]
     },
