@@ -12,6 +12,13 @@
         "coloring",
         "color"
     ],
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "url": "https://github.com/jeff-hykin/better-objc-syntax.git",
+        "type": "git"
+    },
     "engines": {
         "vscode": "^1.0.0"
     },
