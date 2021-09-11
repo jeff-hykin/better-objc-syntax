@@ -67,7 +67,7 @@
   scopes:
     - keyword.operator
 - source: 'session '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -125,7 +125,7 @@
   scopes:
     - keyword.operator
 - source: 'lst '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -202,7 +202,7 @@
   scopes:
     - keyword.operator
 - source: 's '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '@"'
@@ -220,7 +220,7 @@
   scopes:
     - punctuation.terminator.statement
 - source: '        s '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -275,7 +275,7 @@
   scopes:
     - punctuation.terminator.statement
 - source: '        s '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -319,7 +319,7 @@
   scopes:
     - punctuation.separator.delimiter
 - source: ' device.position '
-- source: ==
+- source: '=='
   scopes:
     - keyword.operator.comparison
 - source: ' AVCaptureDevicePositionFront '
@@ -361,7 +361,7 @@
   scopes:
     - punctuation.terminator.statement
 - source: '        s '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -407,7 +407,7 @@
   scopes:
     - punctuation.terminator.statement
 - source: '        s '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -453,7 +453,7 @@
   scopes:
     - punctuation.terminator.statement
 - source: '        s '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['

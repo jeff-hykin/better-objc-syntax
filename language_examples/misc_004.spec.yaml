@@ -154,7 +154,7 @@
 - source: backgroundColor
   scopes:
     - variable.other.member
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -299,7 +299,7 @@
 - source: frame
   scopes:
     - variable.other.member
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: CGRectMake
@@ -408,7 +408,7 @@
 - source: text
   scopes:
     - variable.other.member
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -503,7 +503,7 @@
 - source: '2'
   scopes:
     - constant.numeric.decimal
-- source: ==
+- source: '=='
   scopes:
     - keyword.operator.comparison
 - source: '0'
@@ -526,7 +526,7 @@
 - source: title
   scopes:
     - variable.other.member
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -631,7 +631,7 @@
   scopes:
     - keyword.operator
 - source: ' v '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['

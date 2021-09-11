@@ -266,7 +266,7 @@
 - source: window
   scopes:
     - variable.other.member
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -367,7 +367,7 @@
 - source: viewController
   scopes:
     - variable.other.member
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -450,7 +450,7 @@
   scopes:
     - keyword.operator
 - source: ' nav '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: '['
@@ -511,7 +511,7 @@
 - source: rootViewController
   scopes:
     - variable.other.member
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: ' nav'
