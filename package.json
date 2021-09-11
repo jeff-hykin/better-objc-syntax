@@ -16,7 +16,7 @@
         "Programming Languages"
     ],
     "repository": {
-        "url": "https://github.com/jeff-hykin/better-objc-syntax.git",
+        "url": "https://github.com/jeff-hykin/better-objc-syntax",
         "type": "git"
     },
     "engines": {
