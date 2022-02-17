@@ -11,11 +11,11 @@
     ],
     "patterns": [
         {
-            "include": "#inital_context"
+            "include": "#anonymous_patterns"
         }
     ],
     "repository": {
-        "inital_context": {
+        "anonymous_patterns": {
             "patterns": [
                 {
                     "begin": "((@)(interface|protocol))(?!.+;)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*((:)(?:\\s*)([A-Za-z][A-Za-z0-9]*))?(\\s|\\n)?",
