@@ -2570,7 +2570,15 @@
                                     "match": "((?:[a-zA-Z_]\\w*|(?<=\\]|\\)))\\s*)(?:((?:\\.\\*|\\.))|((?:->\\*|->)))",
                                     "captures": {
                                         "1": {
-                                            "name": "variable.other.object.access.objc"
+                                            "patterns": [
+                                                {
+                                                    "include": "#special_variables"
+                                                },
+                                                {
+                                                    "name": "variable.other.object.access.objc",
+                                                    "match": "(.*)"
+                                                }
+                                            ]
                                         },
                                         "2": {
                                             "name": "punctuation.separator.dot-access.objc"
@@ -2612,7 +2620,15 @@
                                     "match": "((?:[a-zA-Z_]\\w*|(?<=\\]|\\)))\\s*)(?:((?:\\.\\*|\\.))|((?:->\\*|->)))",
                                     "captures": {
                                         "1": {
-                                            "name": "variable.other.object.access.objc"
+                                            "patterns": [
+                                                {
+                                                    "include": "#special_variables"
+                                                },
+                                                {
+                                                    "name": "variable.other.object.access.objc",
+                                                    "match": "(.*)"
+                                                }
+                                            ]
                                         },
                                         "2": {
                                             "name": "punctuation.separator.dot-access.objc"
