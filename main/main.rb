@@ -25,6 +25,19 @@ grammar = Grammar.fromTmLanguage(File.join(__dir__, "modified.tmLanguage.json"))
 # 
 # Helpers
 # 
+    # @space
+    # @spaces
+    # @digit
+    # @digits
+    # @standard_character
+    # @word
+    # @word_boundary
+    # @white_space_start_boundary
+    # @white_space_end_boundary
+    # @start_of_document
+    # @end_of_document
+    # @start_of_line
+    # @end_of_line
     part_of_a_variable = /[a-zA-Z_][a-zA-Z_0-9]*/
     # this is really useful for keywords. eg: variableBounds[/new/] wont match "newThing" or "thingnew"
     variableBounds = ->(regex_pattern) do
