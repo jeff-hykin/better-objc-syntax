@@ -18,7 +18,7 @@ grammar = Grammar.fromTmLanguage(File.join(__dir__, "modified.tmLanguage.json"))
 # 
     grammar[:$initial_context] = [
         # the existing pattern
-        *grammar[:anonymous_patterns]
+        grammar.repository[:anonymous_patterns]
     ]
 
 # 
