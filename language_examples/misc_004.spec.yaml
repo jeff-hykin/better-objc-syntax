@@ -141,7 +141,7 @@
     - punctuation.terminator.statement
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -519,7 +519,7 @@
     - punctuation.section.block.begin.bracket.curly
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access

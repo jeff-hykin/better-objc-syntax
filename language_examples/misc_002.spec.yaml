@@ -3496,7 +3496,7 @@
     - punctuation.terminator.statement
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -3512,7 +3512,7 @@
     - punctuation.terminator.statement
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -3597,7 +3597,7 @@
     - keyword.operator.assignment
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -3619,7 +3619,7 @@
     - punctuation.terminator.statement
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -3934,7 +3934,7 @@
     - punctuation.terminator.statement
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -4696,7 +4696,7 @@
     - keyword.operator.assignment
 - source: self
   scopes:
-    - variable.other.object.access
+    - variable.language
 - source: .
   scopes:
     - punctuation.separator.dot-access
