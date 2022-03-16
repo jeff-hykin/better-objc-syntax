@@ -119,8 +119,35 @@
                     ]
                 },
                 {
-                    "match": "\\b(NS_DURING|NS_HANDLER|NS_ENDHANDLER)\\b",
-                    "name": "keyword.control.macro.objc"
+                    "match": "\\b(NS_DURING|NS_HANDLER|NS_ENDHANDLER|NS_ASSUME_NONNULL_BEGIN|NS_ASSUME_NONNULL_END|NS_DESIGNATED_INITIALIZER|NS_INLINE|NS_REFINED_FOR_SWIFT|NS_TYPED_ENUM|NS_TYPED_EXTENSIBLE_ENUM|NS_UNAVAILABLE|FOUNDATION_EXTERN)\\b",
+                    "name": "meta.preprocessor.macro.objc"
+                },
+                {
+                    "begin": "\\b(API_AVAILABLE|API_DEPRECATED|API_UNAVAILABLE|NS_AVAILABLE|NS_AVAILABLE_MAC|NS_AVAILABLE_IOS|NS_DEPRECATED|NS_DEPRECATED_MAC|NS_DEPRECATED_IOS|NS_SWIFT_NAME)\\s*(\\()",
+                    "beginCaptures":
+                    {
+                        "1":
+                        {
+                            "name": "meta.preprocessor.macro.callable.objc"
+                        },
+                        "2":
+                        {
+                            "name": "punctuation.section.macro.arguments.begin.bracket.round"
+                        }
+                    },
+                    "end": "\\)",
+                    "endCaptures":
+                    {
+                        "0":
+                        {
+                            "name": "punctuation.section.macro.arguments.end.bracket.round"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#c_lang"
+                        }
+                    ]
                 },
                 {
                     "captures": {
@@ -3236,7 +3263,7 @@
             "name": "meta.function.objc",
             "patterns": [
                 {
-                    "begin": "(\\()",
+                    "begin": "(?<=(?:-|\\+)\\s*)(\\()",
                     "beginCaptures": {
                         "1": {
                             "name": "punctuation.definition.type.begin.objc"
