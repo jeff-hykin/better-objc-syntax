@@ -119,6 +119,28 @@
           "name": "keyword.control.macro.objc"
         },
         {
+          "begin": "\\b(API_AVAILABLE|API_DEPRECATED|API_UNAVAILABLE|NS_AVAILABLE|NS_AVAILABLE_MAC|NS_AVAILABLE_IOS|NS_DEPRECATED|NS_DEPRECATED_MAC|NS_DEPRECATED_IOS|NS_SWIFT_NAME)\\s*(\\()",
+          "beginCaptures": {
+            "1": {
+              "name": "meta.preprocessor.macro.callable.objc"
+            },
+            "2": {
+              "name": "punctuation.section.macro.arguments.begin.bracket.round"
+            }
+          },
+          "end": "\\)",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.macro.arguments.end.bracket.round"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#c_lang"
+            }
+          ]
+        },
+        {
           "captures": {
             "1": {
               "name": "punctuation.definition.keyword.objc"
@@ -403,6 +425,28 @@
         {
           "match": "\\b(NS_DURING|NS_HANDLER|NS_ENDHANDLER)\\b",
           "name": "keyword.control.macro.objc"
+        },
+        {
+          "begin": "\\b(API_AVAILABLE|API_DEPRECATED|API_UNAVAILABLE|NS_AVAILABLE|NS_AVAILABLE_MAC|NS_AVAILABLE_IOS|NS_DEPRECATED|NS_DEPRECATED_MAC|NS_DEPRECATED_IOS|NS_SWIFT_NAME)\\s*(\\()",
+          "beginCaptures": {
+            "1": {
+              "name": "meta.preprocessor.macro.callable.objc"
+            },
+            "2": {
+              "name": "punctuation.section.macro.arguments.begin.bracket.round"
+            }
+          },
+          "end": "\\)",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.macro.arguments.end.bracket.round"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#c_lang"
+            }
+          ]
         },
         {
           "captures": {
