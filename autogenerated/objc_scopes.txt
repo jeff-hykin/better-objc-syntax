@@ -10,6 +10,7 @@ constant.other.placeholder.objc
 constant.other.variable.mac-classic.objc
 entity.name.function.name-of-parameter.objc
 entity.name.function.objc
+entity.name.function.preprocessor.apple-foundation.objc
 entity.name.function.preprocessor.objc
 entity.name.type.objc
 entity.other.attribute-name.pragma.preprocessor.objc
@@ -56,7 +57,7 @@ meta.inherited-class.objc
 meta.interface-or-protocol.objc
 meta.preprocessor.diagnostic.objc
 meta.preprocessor.include.objc
-meta.preprocessor.macro.callable.objc
+meta.preprocessor.macro.callable.apple-foundation.objc
 meta.preprocessor.macro.objc
 meta.preprocessor.objc
 meta.preprocessor.pragma.objc
@@ -85,8 +86,8 @@ punctuation.definition.string.begin.objc
 punctuation.definition.string.end.objc
 punctuation.definition.type.begin.objc
 punctuation.definition.type.end.objc
-punctuation.section.macro.arguments.begin.bracket.round
-punctuation.section.macro.arguments.end.bracket.round
+punctuation.section.macro.arguments.begin.bracket.round.apple-foundation.objc
+punctuation.section.macro.arguments.end.bracket.round.apple-foundation.objc
 punctuation.section.scope.begin.objc
 punctuation.section.scope.end.objc
 punctuation.separator.arguments.objc

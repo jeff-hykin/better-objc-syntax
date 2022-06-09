@@ -27,7 +27,7 @@
       "include": "#anonymous_pattern_5"
     },
     {
-      "include": "#anonymous_pattern_6"
+      "include": "#apple_foundation_functional_macros"
     },
     {
       "include": "#anonymous_pattern_7"
@@ -356,28 +356,6 @@
       "match": "\\b(NS_DURING|NS_HANDLER|NS_ENDHANDLER)\\b",
       "name": "keyword.control.macro.objc"
     },
-    "anonymous_pattern_6": {
-      "begin": "\\b(API_AVAILABLE|API_DEPRECATED|API_UNAVAILABLE|NS_AVAILABLE|NS_AVAILABLE_MAC|NS_AVAILABLE_IOS|NS_DEPRECATED|NS_DEPRECATED_MAC|NS_DEPRECATED_IOS|NS_SWIFT_NAME)\\s*(\\()",
-      "beginCaptures": {
-        "1": {
-          "name": "meta.preprocessor.macro.callable.objc"
-        },
-        "2": {
-          "name": "punctuation.section.macro.arguments.begin.bracket.round"
-        }
-      },
-      "end": "\\)",
-      "endCaptures": {
-        "0": {
-          "name": "punctuation.section.macro.arguments.end.bracket.round"
-        }
-      },
-      "patterns": [
-        {
-          "include": "#c_lang"
-        }
-      ]
-    },
     "anonymous_pattern_7": {
       "captures": {
         "1": {
@@ -404,6 +382,29 @@
       },
       "match": "(@)(required|optional)\\b",
       "name": "keyword.control.protocol-specification.objc"
+    },
+    "apple_foundation_functional_macros": {
+      "begin": "(\\b(?:API_AVAILABLE|API_DEPRECATED|API_UNAVAILABLE|NS_AVAILABLE|NS_AVAILABLE_MAC|NS_AVAILABLE_IOS|NS_DEPRECATED|NS_DEPRECATED_MAC|NS_DEPRECATED_IOS|NS_SWIFT_NAME))(?:(?:\\s)+)?(\\()",
+      "end": "\\)",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.preprocessor.apple-foundation.objc"
+        },
+        "2": {
+          "name": "punctuation.section.macro.arguments.begin.bracket.round.apple-foundation.objc"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.macro.arguments.end.bracket.round.apple-foundation.objc"
+        }
+      },
+      "name": "meta.preprocessor.macro.callable.apple-foundation.objc",
+      "patterns": [
+        {
+          "include": "#c_lang"
+        }
+      ]
     },
     "bracketed_content": {
       "begin": "\\[",
