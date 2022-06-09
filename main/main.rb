@@ -17,8 +17,39 @@ grammar = Grammar.fromTmLanguage(File.join(__dir__, "modified.tmLanguage.json"))
 #
 # 
     grammar[:$initial_context] = [
-        # the existing pattern
-        grammar.repository[:anonymous_patterns]
+        # the existing patterns (but now we can inject new stuff between them)
+        :anonymous_pattern_1,
+        :anonymous_pattern_2,
+        :anonymous_pattern_3,
+        :anonymous_pattern_4,
+        :anonymous_pattern_5,
+        :anonymous_pattern_6,
+        :anonymous_pattern_7,
+        :anonymous_pattern_8,
+        :anonymous_pattern_9,
+        :anonymous_pattern_10,
+        :anonymous_pattern_11,
+        :anonymous_pattern_12,
+        :anonymous_pattern_13,
+        :anonymous_pattern_14,
+        :anonymous_pattern_15,
+        :anonymous_pattern_16,
+        :anonymous_pattern_17,
+        :anonymous_pattern_18,
+        :anonymous_pattern_19,
+        :anonymous_pattern_20,
+        :anonymous_pattern_21,
+        :anonymous_pattern_22,
+        :anonymous_pattern_23,
+        :anonymous_pattern_24,
+        :anonymous_pattern_25,
+        :anonymous_pattern_26,
+        :anonymous_pattern_27,
+        :anonymous_pattern_28,
+        :anonymous_pattern_29,
+        :anonymous_pattern_30,
+        :bracketed_content,
+        :c_lang,
     ]
 
 # 
